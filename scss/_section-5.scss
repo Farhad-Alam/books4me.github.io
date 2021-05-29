@@ -1,0 +1,19 @@
+.section-5 {
+  .container {
+    @include respond(sm) {
+      padding: 1rem !important;
+    }
+  }
+  .btn {
+    border-radius: 300px;
+
+    p {
+      @include respond(sm) {
+        margin: 0;
+      }
+    }
+
+
+    
+  }
+}

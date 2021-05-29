@@ -1,0 +1,46 @@
+.section-2 {
+  .row {
+    @include respond(md) {
+      justify-content: center !important;
+    }
+
+    .col-md-4 {
+      @include respond(md) {
+        width: 30rem !important;
+      }
+
+      img {
+        opacity: 0.8;
+      }
+    }
+    .col-md-7 {
+      background-color: #fff;
+      padding: 8rem 5rem;
+      position: relative;
+      top: 4rem;
+      right: 6.5rem;
+      height: 37rem;
+
+      @include respond(sm) {
+        position: relative;
+        top: 0;
+        right: 0;
+        height: auto;
+        padding: 2rem;
+      }
+      @include respond(md) {
+        position: relative;
+        top: 0;
+        right: 0;
+        height: 500px;
+        padding: 4rem;
+        width: 29rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+}

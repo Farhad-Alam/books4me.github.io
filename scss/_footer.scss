@@ -1,0 +1,58 @@
+.footer {
+  color: white;
+  padding: 6rem 4rem;
+  font-family: "PT Sans Narrow", sans-serif;
+
+  @include respond(md) {
+    padding: 6rem 2rem !important;
+  }
+
+  .input-box {
+    input {
+      padding: 0.5rem 5rem 0.5rem 0.5rem;
+      border: none;
+      outline: none;
+
+      @include respond(sm) {
+        display: block;
+        padding: 0.3rem 3rem 0.3rem 1rem !important;
+      }
+      @include respond(md) {
+        padding: 0.3rem 0.1rem 0.3rem 0.3rem !important;
+      }
+    }
+  }
+
+  .links {
+    a {
+      margin: 0 0.7rem 0 0;
+
+      @include respond(md) {
+        margin: 0 1rem 0.5rem 0rem;
+      }
+      @include respond(lg) {
+        margin: 0;
+        margin-right: .35rem;
+        
+      }
+      @include respond(xlg) {
+        margin: 0;
+        margin-right: .35rem;
+        
+      }
+      i {
+        font-size: 1.5rem;
+        color: blanchedalmond;
+        transition: 0.2s ease-in-out;
+
+        @include respond(md) {
+          margin-bottom: .6rem;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

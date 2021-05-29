@@ -1,0 +1,54 @@
+.section-6 {
+  margin-bottom: 5rem;
+
+  .row {
+    @include respond(sm) {
+      padding: 0 !important;
+    }
+    @include respond(md) {
+      padding: 0 !important;
+    }
+
+    .col-md-4{
+
+      @include respond(lg) {
+        width: 100% !important;
+      }
+
+      @include respond(xlg) {
+        width: 100% !important;
+      }
+    }
+    .col-md-4:nth-child(2){
+
+      @include respond(lg) {
+        width: 0rem !important;
+      }
+
+      @include respond(xlg) {
+        width: 0rem !important;
+      }
+    }
+  }
+  .col-sm-12 {
+    .card {
+      @include respond(lg) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card-body {
+        padding: 0 1rem;
+      }
+      img {
+        width: 48%;
+        border-radius: 250px;
+      }
+    }
+  }
+  .hero {
+    width: 22rem;
+  }
+
+}
